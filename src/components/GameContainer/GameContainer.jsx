@@ -1,3 +1,5 @@
+import "./GameContainer.css"
+
 import { useState } from 'react';
 import KeyPadDisplay from "../KeyPadDisplay/KeyPadDisplay";
 import KeyPad from "../KeyPad/KeyPad";
@@ -17,9 +19,9 @@ export default function GameContainer() {
 	}
 
     return (
-        <div>
-			<KeyPadDisplay userInput={userInput} setUserInput={setUserInput} />
+        <div className="game-container">
 			<KeyPad handleClick={handleClick} handleEnter={handleEnter} />
+			<KeyPadDisplay userInput={userInput} setUserInput={setUserInput} />
         </div>
     )
 }
