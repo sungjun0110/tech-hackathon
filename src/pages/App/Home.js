@@ -1,4 +1,5 @@
 import "./Home.css";
+import { Link } from "react-router-dom";
 export default function Home() {
 	return (
 		<>
@@ -78,13 +79,17 @@ export default function Home() {
 								Complete addition problems to feed the cow.
 							</p>
 						</div>
-						<button className="home-button-play">Play</button>
+						<Link to="/gamedetails">
+							<button className="home-button-play">Play</button>
+						</Link>
 					</div>
-					<img
-						src="https://i.imgur.com/SdgaoE0.png"
-						alt="Cow Mania"
-						className="home-hero-image"
-					/>
+					<Link to="/gamedetails">
+						<img
+							src="https://i.imgur.com/SdgaoE0.png"
+							alt="Cow Mania"
+							className="home-hero-image"
+						/>
+					</Link>
 				</main>
 				<footer className="home-footer-container">
 					<div className="home-footer-game">
