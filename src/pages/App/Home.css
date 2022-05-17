@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
 	box-sizing: border-box;
 }
 .home-container {
 	width: 80%;
 	margin: 0 auto;
+	padding-bottom: 20px;
 }
 .home-title,
 .home-sub {
@@ -19,9 +23,13 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+.home-title-image {
+	width: 151px;
+	height: 134px;
+}
 .home-title-container {
-	width: 453px;
-	margin-left: 35%;
+	width: 480px;
 }
 
 .home-title {
@@ -40,15 +48,31 @@
 	line-height: 47px;
 }
 
+.home-sign-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .home-sign-container {
 	display: flex;
 	align-items: center;
 	position: relative;
 	right: 0;
-	width: 150px;
+	width: 220px;
 	font-size: 30px;
 	text-align: center;
 	line-height: 35px;
+}
+
+.home-sign-container p {
+	margin-top: 0;
+}
+
+.home-sign-icon {
+	width: 57px;
+	height: 57px;
 }
 
 .home-nav-container {
@@ -66,7 +90,7 @@
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
-	font-size: 26px;
+	font-size: 22px;
 	line-height: 30px;
 	text-align: center;
 	color: #000000;
@@ -127,10 +151,16 @@
 	border: none;
 	width: 150px;
 	height: 50px;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
 }
 
 .home-hero-container {
-	height: 100%;
+	height: 435px;
+	width: 207px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -140,164 +170,92 @@
 .home-main-container {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
+
+	padding: 20px 40px 20px 30px;
+	background: #aae4f3;
+	border-radius: 20px;
+	margin: 36px 0 20px 0;
 }
 
 .home-hero-title-container {
 	display: flex;
 	flex-direction: column;
-	border: 2px solid black;
+	background: #ffffff;
+	border-radius: 10px;
 }
 
 .home-hero-image {
 	width: 761px;
 	height: 431px;
-	border: 8px solid #444444;
+
 	border-radius: 20px;
 }
 
-/* .home-container {
-	position: relative;
-	width: 1920px;
-	height: 1390px;
-	background: #ffffff;
-}
-
-.home-header {
-	position: absolute;
-	width: 782px;
-	height: 134px;
-	left: 733px;
-	top: 43px;
-}
-
-.home-title-container {
-	position: absolute;
-	width: 453px;
-	height: 134px;
-	left: 733px;
-	top: 43px;
-}
-
-.home-title {
-	position: absolute;
-	width: 453px;
-	height: 100px;
-	left: calc(50% - 453px / 2 - 0.5px);
-	top: calc(50% - 100px / 2 - 602px);
+.home-button-play {
+	width: 142px;
+	height: 80px;
 	font-family: "Jua";
 	font-style: normal;
 	font-weight: 400;
-	font-size: 80px;
-	line-height: 100px;
-	color: #000000;
-}
-
-.home-sub {
-	position: absolute;
-	width: 273px;
-	height: 47px;
-	left: calc(50% - 273px / 2 - 0.5px);
-	top: calc(50% - 47px / 2 - 541.5px);
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 40px;
-	line-height: 47px;
-	color: #000000;
-}
-
-.home-sign-container {
-	position: absolute;
-	width: 172px;
-	height: 70px;
-	left: 1343px;
-	top: 47px;
-}
-
-.home-sign-in {
-	position: absolute;
-	width: 103px;
-	height: 35px;
-	left: calc(50% - 103px / 2 + 434.5px);
-	top: calc(50% - 35px / 2 - 612.5px);
-
-	font-family: "Roboto";
-	font-style: normal;
-	font-weight: 400;
-	font-size: 30px;
-	line-height: 35px;
+	font-size: 60px;
+	line-height: 75px;
 	display: flex;
 	align-items: center;
 	text-align: center;
 	color: #000000;
+	border: none;
+	background: #f5aa19;
+	border-radius: 10px;
 }
 
-.home-sign-up {
-	position: absolute;
-	width: 100px;
-	height: 35px;
-	left: calc(50% - 100px / 2 + 433px);
-	top: calc(50% - 35px / 2 - 580.5px);
+.home-hero-description {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
-	font-size: 30px;
-	line-height: 35px;
-	display: flex;
-	align-items: center;
+	font-size: 26px;
+	line-height: 30px;
 	text-align: center;
 	color: #000000;
+	margin-top: 5px;
 }
 
-.home-nav-container {
-	position: absolute;
-	width: 1110px;
-	height: 279px;
-	left: 405px;
-	top: 223px;
+.home-hero-title {
+	font-family: "Jua";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 38px;
+	color: #000000;
+	margin-bottom: 0;
 }
 
-.home-grade-container {
+.home-footer-container {
 	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 20px;
-	gap: 20px;
-	position: absolute;
-	width: 860px;
-	height: 204px;
-	left: calc(50% - 860px / 2);
-	top: calc(50% - 204px / 2 - 370px);
+	gap: 62px;
+	justify-content: space-between;
 }
 
-.home-subjects-container {
+.home-footer-game {
 	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 0px;
-	gap: 10px;
-	position: absolute;
-	width: 1110px;
-	height: 50px;
-	left: calc(50% - 1110px / 2);
-	top: calc(50% - 50px / 2 - 218px);
+	flex-direction: column;
+	justify-content: space-between;
+	width: 230px;
+	height: 250px;
 }
 
-.home-grade-button {
-	height: 164px;
-	width: 100px;
+.home-footer-game-image {
+	height: 186px;
+	border-radius: 20px;
 }
 
-.home-subject-button {
-	height: 50px;
-	width: 150px;
+.home-footer-game-description {
+	margin-bottom: 0;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 30px;
+	color: #000000;
 }
-
-.home-main-container {
-	position: absolute;
-	width: 1110px;
-	height: 500px;
-	left: 405px;
-	top: 527px;
-} */
