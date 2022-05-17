@@ -1,3 +1,4 @@
+import './Home.css';
 export default function Home() {
 	return (
 		<>
@@ -7,9 +8,10 @@ export default function Home() {
 						<h1 className='home-title'>Build-a-Farm</h1>
 						<h3 className='home-sub'>Math Problems</h3>
 					</div>
-					<div className='home-title-container'>
-						<p className='home-sign'>Sign Up</p>
-						<p className='home-sign'>Sign In</p>
+					<div className=' home-sign-container'>
+						<p className='home-sign-in'>Sign In</p>
+						<p> / </p>
+						<p className='home-sign-up'>Sign Up</p>
 					</div>
 				</header>
 				<nav className='home-nav-container'>
@@ -43,7 +45,7 @@ export default function Home() {
 							<p>6th Grade</p>
 						</div>
 					</div>
-					<div>
+					<div className='home-subjects-container'>
 						<button className='home-subject-button'>Word Problems</button>
 						<button className='home-subject-button'>Addition</button>
 						<button className='home-subject-button'>Subtraction</button>
