@@ -63,26 +63,38 @@ export default function Home() {
 								Complete addition problems to feed the cow.
 							</p>
 						</div>
-						<button className="home-button-play">PLAY</button>
+						<button className="home-button-play">Play</button>
 					</div>
 					<img src="" alt="Cow Mania" className="home-hero-image" />
 				</main>
 				<footer className="home-footer-container">
-					<div className="hfg">
-						<img src="" alt="Chicken Count" className="hfg-image" />
-						<p className="hfg-description">Chicken Count</p>
+					<div className="home-footer-game">
+						<img
+							src=""
+							alt="Chicken Count"
+							className="home-footer-game-image"
+						/>
+						<p className="home-footer-game-description">Chicken Count</p>
 					</div>
-					<div className="hfg">
-						<img src="" alt="Pigs in a Blanket" className="hfg-image" />
-						<p className="hfg-description">Pigs in a Blanket</p>
+					<div className="home-footer-game">
+						<img
+							src=""
+							alt="Pigs in a Blanket"
+							className="home-footer-game-image"
+						/>
+						<p className="home-footer-game-description">Pigs in a Blanket</p>
 					</div>
-					<div className="hfg">
-						<img src="" alt="Horse Roundup" className="hfg-image" />
-						<p className="hfg-description">Horse Roundup</p>
+					<div className="home-footer-game">
+						<img
+							src=""
+							alt="Horse Roundup"
+							className="home-footer-game-image"
+						/>
+						<p className="home-footer-game-description">Horse Roundup</p>
 					</div>
-					<div className="hfg">
-						<img src="" alt="Sleepy Sheep" className="hfg-image" />
-						<p className="hfg-description">Sleepy Sheep</p>
+					<div className="home-footer-game">
+						<img src="" alt="Sleepy Sheep" className="home-footer-game-image" />
+						<p className="home-footer-game-description">Sleepy Sheep</p>
 					</div>
 				</footer>
 			</div>
