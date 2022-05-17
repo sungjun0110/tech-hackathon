@@ -1,16 +1,16 @@
-import { Route, Switch } from 'react-router-dom';
+import { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from './Home';
 import './App.css';
 
 function App() {
-  const responseGoogle = (response) => {
-    console.log(response);
-  }
-
-  return (
-    <div className="App">
-      <a href="http://localhost:3001/auth/google">Log In</a>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Routes>
+				<Route path='/' element={<Home />} />
+			</Routes>
+		</div>
+	);
 }
 
 export default App;
