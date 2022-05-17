@@ -1,20 +1,39 @@
 const express = require('express');
+const morgan = require('morgan');
 const path = require('path');
-const logger = require('morgan');
-
-const app = express();
-
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
+const passport = require('passport');
 
 // Always require and configure near the top 
 require('dotenv').config();
 
-// Connect to the database
 require('./config/database');
-app.use(express.json());
+require('./config/passport');
+
+const indexRouter = require('./routes/index');
+
+const app = express();
 
 // Configure both serve-favicon & static middleware
 // to serve from the production 'build' folder
+app.use(express.json());
+app.use(cookieParser());
+app.use(morgan('dev'));
+app.use(session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUninitialized: true,
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+app.use(function (req, res, next) {
+    res.locals.user = req.user;
+    next();
+});
 app.use(express.static(path.join(__dirname, 'build')));
+
+app.use('/', indexRouter);
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX requests
