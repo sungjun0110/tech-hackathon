@@ -1,19 +1,10 @@
+import Navbar from "../../components/navbar/Navbar";
 import "./Home.css";
-export default function Home() {
+export default function Home({ getUser, user }) {
 	return (
 		<>
 			<div className="home-container">
-				<header className="home-header">
-					<div className="home-title-container">
-						<h1 className="home-title">Build-a-Farm</h1>
-						<h3 className="home-sub">Math Problems</h3>
-					</div>
-					<div className=" home-sign-container">
-						<p className="home-sign-in">Sign In</p>
-						<p> / </p>
-						<p className="home-sign-up">Sign Up</p>
-					</div>
-				</header>
+				<Navbar getUser={getUser} user={user} />
 				<nav className="home-nav-container">
 					<div className="home-grade-container">
 						<div className="home-grade-button">
