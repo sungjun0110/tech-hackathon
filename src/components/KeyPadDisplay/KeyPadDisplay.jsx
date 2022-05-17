@@ -13,7 +13,7 @@ export default function KeyPadDisplay({userInput, setUserInput}) {
         // console.log('value: ',evt.target.value.slice(-1))
         if (evt.nativeEvent.inputType === "deleteContentBackward") {
             setUserInput(userInput.slice(0, userInput.length - 1));
-        } else if(parseInt(evt.target.value.slice(-1))) {
+        } else if(parseInt(evt.target.value.slice(-1)) || evt.target.value.slice(-1) === '0') {
             setUserInput(userInput.concat(evt.target.value.slice(-1)));
         }
     }
