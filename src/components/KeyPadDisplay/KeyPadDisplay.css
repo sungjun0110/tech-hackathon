@@ -6,6 +6,9 @@
     height: 197px;
     background-color: #FEDB5F;
     font-size: 70px;
+    border-radius: 11.4px;
+    margin-top: -153px;
+    margin-left: 60px;
 }
 
 .user-input {
