@@ -1,0 +1,21 @@
+.display-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 452px;
+    height: 197px;
+    background-color: #FEDB5F;
+    font-size: 70px;
+}
+
+.user-input {
+    text-align: center;
+    background-color: white;
+    height: 90px;
+    width: 150px;
+    border-radius: 12px;
+    font-size: 70px;
+    margin-left: 10px;
+    border: 3px solid black;
+    color: black;
+}
