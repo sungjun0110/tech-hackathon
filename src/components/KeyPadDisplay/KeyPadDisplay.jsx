@@ -23,9 +23,6 @@ export default function KeyPadDisplay({userInput, setUserInput}) {
             <div>
                 {num1} + {num2} = 
             </div>
-            {/* <div className='user-input' >
-                {userInput}
-            </div> */}
             <input className='user-input' value={userInput} onChange={handleChange} ></input>
         </div>
     )
