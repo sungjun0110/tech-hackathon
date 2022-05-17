@@ -13,7 +13,11 @@ const RewardModal = () => {
     <Card className="card">
       <h2 className="congrats">Congratulations</h2>
       <p className="msg">You've earned a new barn animal!</p>
-      <img src="" alt="Star Trophy"></img>
+      <img
+        className="star_img"
+        src="https://i.imgur.com/rdpPvTR.png"
+        alt="Star Trophy"
+      ></img>
       <div className="btn_container">
         <button name="button" type="button" className="btn view_btn">
           View Barn
