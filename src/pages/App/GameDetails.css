@@ -37,9 +37,13 @@
 	max-width: 720px;
 }
 .back-button-container {
-	width: 101px;
+	width: 132px;
 	height: 122px;
-	background-color: gray;
+}
+
+.back-button {
+	width: 132px;
+	height: 122px;
 }
 
 .game-details-instructions {
@@ -49,7 +53,6 @@
 	font-size: 30px;
 	line-height: 35px;
 	text-align: center;
-
 	color: #000000;
 }
 

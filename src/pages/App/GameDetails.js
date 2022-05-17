@@ -3,9 +3,15 @@ import { Link } from "react-router-dom";
 export default function GameDetails() {
 	return (
 		<div className="game-details-container">
-			<div className="back-button-container">
-				<img src="" alt="Back Button" className="back-button"></img>
-			</div>
+			<Link to="/">
+				<div className="back-button-container">
+					<img
+						src="https://i.imgur.com/c25HT0Z.png"
+						alt="Back Button"
+						className="back-button"
+					></img>
+				</div>
+			</Link>
 			<main className="game-details-main-container">
 				<header className="game-details-header-container">
 					<h1 className="game-details-subject">Addition</h1>
@@ -16,7 +22,11 @@ export default function GameDetails() {
 					For each question you get correct, you will feed the cow. When the cow
 					is full, it will join your farm! Let's get started!
 				</section>
-				<img src="" alt="Farm Animal" className="game-details-animal"></img>
+				<img
+					src="https://i.imgur.com/4fpQ798.png"
+					alt="Farm Animal"
+					className="game-details-animal"
+				></img>
 				<Link to="/cowmania">
 					<button className="game-details-start">Start Game</button>
 				</Link>
