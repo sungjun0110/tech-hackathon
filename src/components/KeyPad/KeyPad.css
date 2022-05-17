@@ -1,0 +1,23 @@
+.keypad-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 491px;
+    height: 533px;
+    border-radius: 17px;
+    background-color: #C4C4C4;
+}
+
+.keypad-key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 122px;
+    height: 100px;
+    margin: 12.5px;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+}
