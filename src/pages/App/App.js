@@ -1,15 +1,15 @@
-import GameDetails from './GameDetails'
-import CowMania from './CowMania'
-import ComingSoon from './ComingSoon'
-import './App.css'
-import { useState, useContext, createContext } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
-import Home from './Home'
-import './App.css'
+import GameDetails from "./GameDetails";
+import CowMania from "./CowMania";
+import ComingSoon from "./ComingSoon";
+import RewardModal from "../../components/RewardModal/RewardModal";
+import "./App.css";
+import { useState, useContext, createContext } from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./Home";
+import "./App.css";
 
-export const SessionContext = createContext(null)
+export const SessionContext = createContext(null);
 function App() {
-
 	const [winCondition, setWinCondition] = useState(false);
 	const [farmFood, setFarmFood] = useState(0);
 	const [userResult, setUserResult] = useState();
@@ -38,4 +38,4 @@ function App() {
 	);
 }
 
-export default App
+export default App;
