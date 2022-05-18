@@ -105,7 +105,8 @@ export default function Home() {
 						<div className="home-hero-title-container">
 							<h2 className="home-hero-title">Cow Mania</h2>
 							<p className="home-hero-description">
-								Complete addition problems to feed the cow.
+								Complete addition problems to feed the cow and add it to your
+								farm!
 							</p>
 						</div>
 						<Link to="/gamedetails">
