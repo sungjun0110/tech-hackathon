@@ -1,27 +1,34 @@
 import "./FoodBar.css";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { SessionContext } from "../../pages/App/App";
-import { useNavigate } from "react-router-dom";
 
 export default function FoodBar() {
-	const navigate = useNavigate();
+	const [food, setFood] = useState("");
+
 	const { farmFood, setWinCondition } = useContext(SessionContext);
 
 	useEffect(() => {
-		console.log(farmFood, "farm food updated");
+		// If winCondition(true) modal from RewardModal replaces the GameContainer elements on the screen
 		if (farmFood === 100) {
 			setWinCondition(true);
+		}
+		// Created a conditional to check if the food bar is empty, was getting a weird line rendered because of the CSS border setting. Removing the class if it is empty, and applying the class only when the bars height > 0 solves this.
+		if (farmFood === 0) {
+			setFood("");
+		} else {
+			setFood("food-bar");
 		}
 	}, [farmFood]);
 	return (
 		<>
+			{/* gray div holds food bar and h3 element */}
 			<div className="food-bar-controller">
+				{/* Holds the empty white div */}
 				<div className="food-bar-container">
+					{/* holds the colored div */}
 					<div className="food-bar-background">
-						<div
-							className={"food-bar"}
-							style={{ height: `${farmFood}%` }}
-						></div>
+						{/* is the actual colored div */}
+						<div className={`${food}`} style={{ height: `${farmFood}%` }}></div>
 					</div>
 				</div>
 				<h3 className="food">Food</h3>

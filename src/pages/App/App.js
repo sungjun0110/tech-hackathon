@@ -15,6 +15,7 @@ function App() {
 	const [userResult, setUserResult] = useState();
 	return (
 		<SessionContext.Provider
+			// State variables and setState functions usable by any component (with proper SessionContext and useContext imports).
 			value={{
 				farmFood,
 				setFarmFood,
@@ -31,6 +32,7 @@ function App() {
 						<Route path="/gamedetails" element={<GameDetails />} />
 						<Route path="/cowmania" element={<CowMania />} />
 						<Route path="/winscreen" element={<RewardModal />} />
+						{/* Sends anyone that clinks on a link in progress, or route that doesnt exist, to a coming soon page */}
 						<Route path="/*" element={<ComingSoon />} />
 					</Routes>
 				</div>
