@@ -25,7 +25,8 @@ export default function GameContainer() {
 		}
 	}
 
-	function handleEnter() {
+	function handleEnter(evt) {
+			evt.preventDefault()
 		// console.log(userInput);
 		// console.log(num1 + num2 === parseInt(userInput));
 		if (parseInt(userInput) === num1 + num2) {
@@ -71,6 +72,7 @@ export default function GameContainer() {
 					<KeyPadDisplay
 						userInput={userInput}
 						setUserInput={setUserInput}
+						handleEnter={handleEnter}
 						num1={num1}
 						num2={num2}
 					/>

@@ -2,7 +2,7 @@ import "./KeyPadDisplay.css";
 import { useContext, useEffect } from "react";
 import { SessionContext } from "../../pages/App/App";
 
-export default function KeyPadDisplay({ userInput, setUserInput, num1, num2 }) {
+export default function KeyPadDisplay({ userInput, setUserInput, num1, num2, handleEnter }) {
 	const { userResult } = useContext(SessionContext);
 	function handleChange(evt) {
 		console.log(evt);
@@ -28,11 +28,13 @@ export default function KeyPadDisplay({ userInput, setUserInput, num1, num2 }) {
 			<div>
 				{num1} + {num2} =
 			</div>
-			<input
-				className={`${userResult} ` + "user-input"}
-				value={userInput}
-				onChange={handleChange}
-			></input>
+			<form onSubmit={handleEnter}>
+				<input
+					className={`${userResult} ` + "user-input"}
+					value={userInput}
+					onChange={handleChange}
+				></input>
+			</form>
 		</div>
 	);
 }

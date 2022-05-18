@@ -21,6 +21,11 @@
 	background-color: black;
 	color: white;
 	font-size: 60px;
+	user-select:none;
+}
+
+.back {
+	font-size: 30px;
 }
 
 .keypad-key-enter {
@@ -33,6 +38,7 @@
 	background-color: black;
 	color: white;
 	font-size: 30px;
+	user-select:none;
 }
 
 .keypad-key:hover {

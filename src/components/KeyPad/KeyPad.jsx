@@ -13,7 +13,7 @@ export default function KeyPad({handleClick, handleEnter}) {
                 <div className="keypad-key" onClick={() => handleClick('7')} >7</div>
                 <div className="keypad-key" onClick={() => handleClick('8')} >8</div>
                 <div className="keypad-key" onClick={() => handleClick('9')} >9</div>
-                <div className="keypad-key" onClick={() => handleClick('<-')} >{'<-'}</div>
+                <div className="keypad-key back" onClick={() => handleClick('<-')} >Back</div>
                 <div className="keypad-key" onClick={() => handleClick('0')} >0</div>
                 <div className="keypad-key-enter" onClick={handleEnter}>Enter</div>
         </div>
