@@ -13,11 +13,7 @@ router.get('/oauth2callback', passport.authenticate(
     {
         failureRedirect: "http://localhost:3000/",
         successRedirect: "http://localhost:3000/",
-    }),
-    function (req, res) {
-        console.log("user: ", req.user);
-        res.send("Thank you");
-    }
+    })
 );
 
 router.get('/logout', function(req, res) {

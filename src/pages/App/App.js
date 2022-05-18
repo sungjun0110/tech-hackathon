@@ -21,7 +21,7 @@ function App() {
 				<Route path='/' element={<Home getUser={getUser} user={user} />} />
 				<Route path="/gamedetails" element={<GameDetails />} />
 				<Route path="/cowmania" element={<CowMania />} />
-				<Route path="/*" element={<ComingSoon />} />
+				<Route path="/*" element={<Home />} />
 			</Routes>
 		</div>
 	);
