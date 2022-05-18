@@ -6,7 +6,6 @@ export default function Home() {
 	return (
 		<>
 			<div className="home-container">
-				<Navbar />
 				<header className="home-header">
 					<div className="home-title-image-container">
 						<img
