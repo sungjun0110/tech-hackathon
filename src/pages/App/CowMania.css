@@ -82,7 +82,7 @@
 	align-self: flex-end;
 	position: absolute;
 	right: 25%;
-	bottom: 10vh;
+	bottom: 3vh;
 	padding-bottom: 4%;
 }
 
@@ -117,7 +117,7 @@
 	border: solid black 4px;
 }
 
-#game-instruction-container:hover #question-mark{
+#game-instruction-container:hover #question-mark {
 	background-color: rgba(255, 255, 255);
 	transform: scale(1.1);
 	width: 80px;
