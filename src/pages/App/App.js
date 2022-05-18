@@ -9,7 +9,7 @@ import "./App.css";
 
 export const SessionContext = createContext(null);
 function App() {
-	const [farmFood, setFarmFood] = useState();
+	const [farmFood, setFarmFood] = useState(0);
 	const [userResult, setUserResult] = useState();
 	return (
 		<SessionContext.Provider

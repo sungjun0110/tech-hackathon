@@ -32,9 +32,9 @@
 
 .food-bar {
 	width: 54px;
-	height: 120px;
+
 	background: linear-gradient(180deg, #f5eb8d 0%, #dca310 100%);
-	border-top: 0.75px solid #000000;
+
 	border-radius: 30px;
 }
 

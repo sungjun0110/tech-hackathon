@@ -3,9 +3,11 @@ import { useState, useContext } from "react";
 import KeyPadDisplay from "../KeyPadDisplay/KeyPadDisplay";
 import KeyPad from "../KeyPad/KeyPad";
 import { SessionContext } from "../../pages/App/App";
+import { useNavigate } from "react-router-dom";
 
 export default function GameContainer() {
-	const { setUserResult } = useContext(SessionContext);
+	const navigate = useNavigate();
+	const { setUserResult, setFarmFood, farmFood } = useContext(SessionContext);
 	const [userInput, setUserInput] = useState("");
 	const [num1, setNum1] = useState(generateNums());
 	const [num2, setNum2] = useState(generateNums());
@@ -27,20 +29,34 @@ export default function GameContainer() {
 		// console.log(num1 + num2 === parseInt(userInput));
 		if (parseInt(userInput) === num1 + num2) {
 			console.log("correct");
+			setUserResult("check");
 			setTimeout(correctAnswer, 500);
 		} else {
 			console.log("false");
+			setUserResult("x");
 			setTimeout(incorrectAnswer, 500);
 		}
 	}
 
 	function correctAnswer() {
-		setUserResult("check");
+		if (farmFood < 100) {
+			setFarmFood(farmFood + 10);
+			setNum1(generateNums());
+			setNum2(generateNums());
+			setTimeout(setUserResult(), 500);
+			setUserInput("");
+		} else {
+			alert("winner");
+			setFarmFood(0);
+			setTimeout(setUserResult(), 500);
+			setUserInput("");
+		}
+
 		console.log("check");
 	}
 
 	function incorrectAnswer() {
-		setUserResult("x");
+		setTimeout(setUserResult(), 500);
 		console.log("x");
 	}
 
