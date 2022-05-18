@@ -1,11 +1,17 @@
 import "./FoodBar.css";
 import { useContext, useEffect } from "react";
 import { SessionContext } from "../../pages/App/App";
+import { useNavigate } from "react-router-dom";
+
 export default function FoodBar() {
-	const { farmFood } = useContext(SessionContext);
+	const navigate = useNavigate();
+	const { farmFood, setWinCondition } = useContext(SessionContext);
 
 	useEffect(() => {
 		console.log(farmFood, "farm food updated");
+		if (farmFood === 100) {
+			setWinCondition(true);
+		}
 	}, [farmFood]);
 	return (
 		<>

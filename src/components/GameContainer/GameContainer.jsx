@@ -4,10 +4,11 @@ import KeyPadDisplay from "../KeyPadDisplay/KeyPadDisplay";
 import KeyPad from "../KeyPad/KeyPad";
 import { SessionContext } from "../../pages/App/App";
 import { useNavigate } from "react-router-dom";
-
+import RewardModal from "../RewardModal/RewardModal";
 export default function GameContainer() {
 	const navigate = useNavigate();
-	const { setUserResult, setFarmFood, farmFood } = useContext(SessionContext);
+	const { setUserResult, setFarmFood, farmFood, winCondition } =
+		useContext(SessionContext);
 	const [userInput, setUserInput] = useState("");
 	const [num1, setNum1] = useState(generateNums());
 	const [num2, setNum2] = useState(generateNums());
@@ -39,20 +40,18 @@ export default function GameContainer() {
 	}
 
 	function correctAnswer() {
-		if (farmFood < 100) {
-			setFarmFood(farmFood + 10);
+		setFarmFood(farmFood + 10);
+		console.log(farmFood);
+		if (farmFood <= 90) {
 			setNum1(generateNums());
 			setNum2(generateNums());
 			setTimeout(setUserResult(), 500);
 			setUserInput("");
 		} else {
-			alert("winner");
 			setFarmFood(0);
 			setTimeout(setUserResult(), 500);
 			setUserInput("");
 		}
-
-		console.log("check");
 	}
 
 	function incorrectAnswer() {
@@ -62,13 +61,19 @@ export default function GameContainer() {
 
 	return (
 		<div className="game-container">
-			<KeyPad handleClick={handleClick} handleEnter={handleEnter} />
-			<KeyPadDisplay
-				userInput={userInput}
-				setUserInput={setUserInput}
-				num1={num1}
-				num2={num2}
-			/>
+			{winCondition ? (
+				<RewardModal />
+			) : (
+				<>
+					<KeyPad handleClick={handleClick} handleEnter={handleEnter} />
+					<KeyPadDisplay
+						userInput={userInput}
+						setUserInput={setUserInput}
+						num1={num1}
+						num2={num2}
+					/>
+				</>
+			)}
 		</div>
 	);
 }
