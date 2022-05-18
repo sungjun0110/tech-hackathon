@@ -204,9 +204,9 @@
 .home-main-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 20px;
 	align-items: center;
-
 	padding: 20px 40px 20px 30px;
 	background: #aae4f3;
 	border-radius: 20px;
@@ -218,12 +218,13 @@
 	flex-direction: column;
 	background: #ffffff;
 	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
 }
 
 .home-hero-image {
 	width: 761px;
 	height: 431px;
-
 	border-radius: 20px;
 }
 
