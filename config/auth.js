@@ -1,4 +1,5 @@
 module.exports = function isLoggedIn(req, res, next) {
-    if ( req.isAutehnticated() ) return next();
-    res.redirect('/auth/google');
+    if ( req.user ) next();
+    else 
+        res.status(401).send('You must log in first!');
 }

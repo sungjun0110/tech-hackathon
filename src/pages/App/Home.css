@@ -110,32 +110,66 @@
 	color: #000000;
 }
 
+.button:hover {
+	transform: scale(1.1, 1.1);
+}
+
 .bk {
 	background: #58bad4;
+}
+
+.bk:hover {
+	background: rgba(88, 186, 212, 0.8);
+
 }
 
 .b1 {
 	background: #d34b58;
 }
 
+.b1:hover {
+	background: rgb(211, 75, 88, 0.8);
+}
+
 .b2 {
 	background: #77d280;
 }
 
+.b2:hover {
+	background: rgba(119, 210, 128, 0.8);
+}
+
+
 .b3 {
 	background: #ae6be2;
+}
+
+.b3:hover {
+	background: rgba(174, 107, 226, 0.8);
 }
 
 .b4 {
 	background: #f1ab42;
 }
 
+.b4:hover {
+	background: rgba(241, 171, 66, 0.8);
+}
+
 .b5 {
 	background: #5c99f5;
 }
 
+.b5:hover {
+	background: rgba(92, 153, 245, 0.8);
+}
+
 .b6 {
 	background: #fcd934;
+}
+
+.b6:hover {
+	background: rgba(252, 217, 52, 0.8);
 }
 
 .home-subject-container {

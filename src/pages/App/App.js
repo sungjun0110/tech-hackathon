@@ -30,7 +30,6 @@ function App() {
 						<Route path="/" element={<Home />} />
 						<Route path="/gamedetails" element={<GameDetails />} />
 						<Route path="/cowmania" element={<CowMania />} />
-						<Route path="/winscreen" element={<RewardModal />} />
 						<Route path="/*" element={<ComingSoon />} />
 					</Routes>
 				</div>
