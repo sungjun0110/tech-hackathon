@@ -1,36 +1,41 @@
 .keypad-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    width: 295px;
-    height: 350px;
-    border-radius: 17px;
-    background-color: #C4C4C4;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	width: 295px;
+	height: 350px;
+	border-radius: 17px;
+	background-color: #c4c4c4;
 }
 
 .keypad-key {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 75px;
-    height: 65px;
-    margin: 4px 6px;
-    background-color: black;
-    color: white;
-    font-size: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 75px;
+	height: 65px;
+	margin: 4px 6px;
+	background-color: black;
+	color: white;
+	font-size: 60px;
 }
 
 .keypad-key-enter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 75px;
-    height: 65px;
-    margin: 4px 6px;
-    background-color: black;
-    color: white;
-    font-size: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 75px;
+	height: 65px;
+	margin: 4px 6px;
+	background-color: black;
+	color: white;
+	font-size: 30px;
+}
+
+.keypad-key:hover {
+	background-color: white;
+	color: black;
 }

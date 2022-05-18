@@ -68,7 +68,7 @@ export default function Home() {
 						<Link to="/fifthgrade">
 							<div className="home-grade-button">
 								<button className="button b5">5</button>
-								<p>5th Grade</p>
+								<p className="home-grade-p">5th Grade</p>
 							</div>
 						</Link>
 						<Link to="/sixthgrade">
