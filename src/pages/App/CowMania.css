@@ -4,27 +4,33 @@
 	box-sizing: border-box;
 }
 .cowmania-page {
-	max-width: 1625px;
-	max-height: 1080px;
+	width: 100vw;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-}
-.cowmania-container {
-	display: flex;
-	align-items: center;
-	width: 100%;
-	height: 1060px;
-	justify-content: flex-end;
-	background-image: url("https://i.imgur.com/objm3zp.png");
+	background-image: url("https://i.imgur.com/bP95QF2.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.cowmania-container {
+	display: flex;
+	position: relative;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	justify-content: flex-end;
+}
 
 .cowmania-gamecontainer {
-	margin: 0 auto;
+	margin: 0 auto 10vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
 }
 
 .win-modal {
@@ -37,11 +43,12 @@
 
 .cowmania-back-container {
 	display: flex;
-	align-items: center;
-	flex-direction: column;
 	position: absolute;
-	top: 3%;
-	left: 8%;
+	top: 20px;
+	left: 20px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 .cowmania-back-button {
 	width: 115px;
@@ -66,9 +73,7 @@
 }
 
 .cowmania-foodbar {
-	position: absolute;
-	right: 19%;
-	bottom: 18%;
+	position: relative;
 }
 
 .cowmania-footer {
@@ -76,17 +81,16 @@
 	flex-direction: row;
 	align-self: flex-end;
 	position: absolute;
-	right: 20%;
+	right: 25%;
+	bottom: 10vh;
 	padding-bottom: 4%;
 }
 
 .cowmania-cow {
-	width: 248px;
-	height: 191px;
+	width: 15vw;
 }
 
 .cowmania-hay {
-	height: 132px;
-	width: 174px;
+	height: 9vw;
 	align-self: flex-end;
 }
