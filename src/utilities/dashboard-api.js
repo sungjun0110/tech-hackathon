@@ -1,9 +1,9 @@
-// import sendRequest from './send-request';
+import sendRequest from './send-request';
 
-// export function getAll(animal) {
-//     return sendRequest('/dashboard' + animal);
-// }
+export function getAll(animal) {
+    return sendRequest('http://localhost:3001/dashboard/' + animal);
+}
 
-// export function createDashboard(animal) {
-//     return sendRequest('/dashboard', 'POST', animal);
-// }
+export function createDashboard(animal) {
+    return sendRequest('http://localhost:3001/dashboard', 'POST', animal);
+}
