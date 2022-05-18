@@ -11,10 +11,10 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
     'google',
     {
-        successRedirect: '/',
-        failureRedirect: '/',
-    }
-));
+        failureRedirect: "http://localhost:3000/",
+        successRedirect: "http://localhost:3000/",
+    })
+);
 
 router.get('/logout', function(req, res) {
     req.logout();
