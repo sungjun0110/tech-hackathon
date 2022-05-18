@@ -4,6 +4,7 @@ import './Dashboard.css';
 
 export default function Dashboard() {
     const [names, setNames] = useState([]);
+    const [name, setName] = useState('');
 
     useEffect(() => {
         const getNames = async () => {
@@ -11,7 +12,17 @@ export default function Dashboard() {
             setNames(newNames);
         };
         getNames();
-    }, []);
+    });
+
+    function handleChange(evt) {
+        setName(evt.target.value);
+    }
+
+    async function handleSubmit(evt) {
+        evt.preventDefault();
+        const newName = await dashboardAPI.createDashboard(name);
+        setName('');
+    }
 
     return (
         <div id='dashboard'>
@@ -21,7 +32,11 @@ export default function Dashboard() {
                 className="game-details-animal"
 			></img>
             <div id='name-container'>
-
+                <form className="dashboard-form" onSubmit={handleSubmit}>
+                    <label>Name</label>
+                    <input type="text" name="name" value={name} onChange={handleChange} required />
+                    <input type="submit" />
+                </form>
             </div>
         </div>
     )
