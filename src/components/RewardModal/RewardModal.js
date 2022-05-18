@@ -4,6 +4,7 @@ import { SessionContext } from '../../pages/App/App'
 import './RewardModal.css'
 
 const RewardModal = (props) => {
+  const { setFarmFood, setWinCondition } = useContext(SessionContext)
   const [farmView, setFarmView] = useState('B')
 
   const templateSwitch = () => {
@@ -15,19 +16,27 @@ const RewardModal = (props) => {
     }
   }
 
+  const handleReset = () => {
+    setFarmFood(0)
+    setWinCondition(false)
+  }
+
   const viewFarmTemplate = (
     <div>
       <div className="backdrop" />
-      <img src="images/bg.jpg" className="img" />
-      <buton className="btn next_btn">Back</buton>
-      <div className="view_2"></div>
+      <Card className="">
+        <div className="view_2"></div>
+        <buton className="btn next_btn" onClick={() => setFarmView('B')}>
+          Back
+        </buton>
+      </Card>
     </div>
   )
 
   const rewardTemplate = (
     <div>
       <div className="backdrop" />
-      <Card className="card">
+      <Card className="card view_2">
         <h2 className="congrats">Nice additon skills</h2>
         <p className="msg">
           You fed the cow! The cow has been added to you farm
@@ -47,11 +56,7 @@ const RewardModal = (props) => {
           >
             View Barn
           </button>
-          <button
-            // onClick={handleGameRestart}
-            type="button"
-            className="btn next_btn"
-          >
+          <button onClick={handleReset} type="button" className="btn next_btn">
             Next Level
           </button>
         </div>

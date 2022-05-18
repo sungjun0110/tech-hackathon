@@ -14,7 +14,6 @@ passport.use(
         },
         // The verify callback function
         function(accessToken, refreshToken, profile, cb) {
-            console.log('HERE');
             User.findOne({ googleId: profile.id }).then(async function(user) {
                 if (user) return cb(null, user);
                 try {

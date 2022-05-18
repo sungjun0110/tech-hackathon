@@ -110,32 +110,66 @@
 	color: #000000;
 }
 
+.button:hover {
+	transform: scale(1.1, 1.1);
+}
+
 .bk {
 	background: #58bad4;
+}
+
+.bk:hover {
+	background: rgba(88, 186, 212, 0.8);
+
 }
 
 .b1 {
 	background: #d34b58;
 }
 
+.b1:hover {
+	background: rgb(211, 75, 88, 0.8);
+}
+
 .b2 {
 	background: #77d280;
 }
 
+.b2:hover {
+	background: rgba(119, 210, 128, 0.8);
+}
+
+
 .b3 {
 	background: #ae6be2;
+}
+
+.b3:hover {
+	background: rgba(174, 107, 226, 0.8);
 }
 
 .b4 {
 	background: #f1ab42;
 }
 
+.b4:hover {
+	background: rgba(241, 171, 66, 0.8);
+}
+
 .b5 {
 	background: #5c99f5;
 }
 
+.b5:hover {
+	background: rgba(92, 153, 245, 0.8);
+}
+
 .b6 {
 	background: #fcd934;
+}
+
+.b6:hover {
+	background: rgba(252, 217, 52, 0.8);
 }
 
 .home-subject-container {
@@ -158,6 +192,11 @@
 	line-height: 19px;
 }
 
+.home-subject-button:hover {
+	background: rgba(180, 213, 87, 0.8);
+	transform: scale(1.1, 1.1);
+}
+
 .home-hero-container {
 	height: 435px;
 	width: 207px;
@@ -170,9 +209,9 @@
 .home-main-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 20px;
 	align-items: center;
-
 	padding: 20px 40px 20px 30px;
 	background: #aae4f3;
 	border-radius: 20px;
@@ -184,12 +223,13 @@
 	flex-direction: column;
 	background: #ffffff;
 	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
 }
 
 .home-hero-image {
 	width: 761px;
 	height: 431px;
-
 	border-radius: 20px;
 }
 
@@ -208,6 +248,10 @@
 	border: none;
 	background: #f5aa19;
 	border-radius: 10px;
+}
+
+.home-button-play:hover {
+	transform: scale(1.1, 1.1);
 }
 
 .home-hero-description {
@@ -248,6 +292,10 @@
 .home-footer-game-image {
 	height: 186px;
 	border-radius: 20px;
+}
+
+.home-footer-game-image:hover {
+	transform: scale(1.1, 1.1);
 }
 
 .home-footer-game-description {
