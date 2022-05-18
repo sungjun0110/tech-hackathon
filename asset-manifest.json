@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/buildafarm/static/css/main.ad033466.css",
-    "main.js": "/buildafarm/static/js/main.901c7107.js",
-    "index.html": "/buildafarm/index.html",
-    "main.ad033466.css.map": "/buildafarm/static/css/main.ad033466.css.map",
-    "main.901c7107.js.map": "/buildafarm/static/js/main.901c7107.js.map"
+    "main.css": "/tech-hackathon/static/css/main.ad033466.css",
+    "main.js": "/tech-hackathon/static/js/main.901c7107.js",
+    "index.html": "/tech-hackathon/index.html",
+    "main.ad033466.css.map": "/tech-hackathon/static/css/main.ad033466.css.map",
+    "main.901c7107.js.map": "/tech-hackathon/static/js/main.901c7107.js.map"
   },
   "entrypoints": [
     "static/css/main.ad033466.css",
