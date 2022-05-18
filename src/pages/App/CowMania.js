@@ -1,9 +1,15 @@
 import FoodBar from "../../components/FoodBar/FoodBar";
 import { Link } from "react-router-dom";
 import GameContainer from "../../components/GameContainer/GameContainer";
+import Dashboard from '../../components/Dashboard/Dashboard';
 import "./CowMania.css";
 
 export default function CowMania() {
+	function instructionClickHandler() {
+		const gameInstructionDiv = document.getElementById("game-instruction");
+		gameInstructionDiv.classList.toggle('active');
+	}
+
 	return (
 		<>
 			<div className="cowmania-page">
@@ -23,8 +29,6 @@ export default function CowMania() {
 					</Link>
 					<div className="cowmania-gamecontainer">
 						<GameContainer />
-					</div>
-					<div className="cowmania-foodbar">
 						<FoodBar />
 					</div>
 					<footer className="cowmania-footer">
@@ -39,6 +43,13 @@ export default function CowMania() {
 							className="cowmania-hay"
 						></img>
 					</footer>
+					{/* <Dashboard /> */}
+					<div id="game-instruction-container"  onClick={instructionClickHandler}>
+						<div id="question-mark">
+							?
+						</div>
+						<img id="game-instruction" src="https://i.imgur.com/RPuyzei.png"></img>
+					</div>
 				</div>
 			</div>
 		</>

@@ -30,8 +30,8 @@ export default function FoodBar() {
 						{/* is the actual colored div */}
 						<div className={`${food}`} style={{ height: `${farmFood}%` }}></div>
 					</div>
+					<h3 className="food">Food</h3>
 				</div>
-				<h3 className="food">Food</h3>
 			</div>
 		</>
 	);
