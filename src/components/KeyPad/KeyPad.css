@@ -35,10 +35,11 @@
 	width: 75px;
 	height: 65px;
 	margin: 4px 6px;
-	background-color: black;
+	background-color: #0C99CE;
 	color: white;
 	font-size: 30px;
 	user-select:none;
+	border: white 3px solid;
 }
 
 .keypad-key:hover {
