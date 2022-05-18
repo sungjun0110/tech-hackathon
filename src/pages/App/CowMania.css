@@ -94,3 +94,44 @@
 	height: 9vw;
 	align-self: flex-end;
 }
+
+#game-instruction-container {
+	width: 80px;
+	height: 80px;
+	font-size: 60px;
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	border-radius: 50%;
+	user-select: none;
+}
+
+#question-mark {
+	background-color: rgba(255, 255, 255);
+	width: 80px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: solid black 4px;
+}
+
+#game-instruction-container:hover #question-mark{
+	background-color: rgba(255, 255, 255);
+	transform: scale(1.1);
+	width: 80px;
+	height: 80px;
+}
+
+#game-instruction {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: -550px;
+	width: 1000px;
+}
+
+#game-instruction.active {
+	display: block;
+}

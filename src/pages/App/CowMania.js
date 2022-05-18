@@ -5,6 +5,11 @@ import Dashboard from '../../components/Dashboard/Dashboard';
 import "./CowMania.css";
 
 export default function CowMania() {
+	function instructionClickHandler() {
+		const gameInstructionDiv = document.getElementById("game-instruction");
+		gameInstructionDiv.classList.toggle('active');
+	}
+
 	return (
 		<>
 			<div className="cowmania-page">
@@ -39,6 +44,12 @@ export default function CowMania() {
 						></img>
 					</footer>
 					{/* <Dashboard /> */}
+					<div id="game-instruction-container"  onClick={instructionClickHandler}>
+						<div id="question-mark">
+							?
+						</div>
+						<img id="game-instruction" src="https://i.imgur.com/RPuyzei.png"></img>
+					</div>
 				</div>
 			</div>
 		</>
