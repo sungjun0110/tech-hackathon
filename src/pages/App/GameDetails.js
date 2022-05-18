@@ -18,9 +18,9 @@ export default function GameDetails() {
 					<h3 className="game-details-game">Cow Mania</h3>
 				</header>
 				<section className="game-details-instructions">
-					Let's learn addition! In this mission, you will simply add numbers.
-					For each question you get correct, you will feed the cow. When the cow
-					is full, it will join your farm! Let's get started!
+					Let’s learn addition! In this game, you will simply add numbers. For
+					each question you get correct, the food bar will fill. When the cow is
+					full, it will join your farm. Let’s get started!
 				</section>
 				<img
 					src="https://i.imgur.com/4fpQ798.png"
