@@ -26,23 +26,24 @@ export default function GameContainer() {
     }
   }
 
-  function handleEnter() {
-    // console.log(userInput);
-    // console.log(num1 + num2 === parseInt(userInput));
-    if (parseInt(userInput) === num1 + num2) {
-      console.log('correct')
-      // setUserResult causes "Green checkmark" using CSS background image of checkmark. Applies className "check"
-      setUserResult('check')
-      // very brief pause before showing the user checkmark or x.
-      setTimeout(correctAnswer, 500)
-    } else {
-      console.log('false')
-      //setUserResult causes "Red X" using CSS background image of "X". Applies className "X".
-      setUserResult('x')
-      // very brief pause before showing the user checkmark or x.
-      setTimeout(incorrectAnswer, 500)
-    }
-  }
+	function handleEnter(evt) {
+			evt.preventDefault()
+		// console.log(userInput);
+		// console.log(num1 + num2 === parseInt(userInput));
+		if (parseInt(userInput) === num1 + num2) {
+			console.log("correct");
+			// setUserResult causes "Green checkmark" using CSS background image of checkmark. Applies className "check"
+			setUserResult("check");
+			// very brief pause before showing the user checkmark or x.
+			setTimeout(correctAnswer, 500);
+		} else {
+			console.log("false");
+			//setUserResult causes "Red X" using CSS background image of "X". Applies className "X".
+			setUserResult("x");
+			// very brief pause before showing the user checkmark or x.
+			setTimeout(incorrectAnswer, 500);
+		}
+	}
 
   function correctAnswer() {
     // Each correct answer adds 10% to the CSS height property of the food bar. See FoodBar.js line 31, also line 12 for "full bar" condition.
@@ -61,22 +62,24 @@ export default function GameContainer() {
     setTimeout(setUserResult(), 500)
   }
 
-  return (
-    <div className="game-container">
-      {/* If winCondition is true, RewardModal renders and replaces KeyPad + KeyPadDisplay */}
-      {winCondition ? (
-        <RewardModal />
-      ) : (
-        <>
-          <KeyPad handleClick={handleClick} handleEnter={handleEnter} />
-          <KeyPadDisplay
-            userInput={userInput}
-            setUserInput={setUserInput}
-            num1={num1}
-            num2={num2}
-          />
-        </>
-      )}
-    </div>
-  )
+	return (
+		<div className="game-container">
+			{/* If winCondition is true, RewardModal renders and replaces KeyPad + KeyPadDisplay */}
+			{winCondition ? (
+				<RewardModal />
+			) : (
+				<>
+					<KeyPad handleClick={handleClick} handleEnter={handleEnter} />
+					<KeyPadDisplay
+						userInput={userInput}
+						setUserInput={setUserInput}
+						handleEnter={handleEnter}
+						num1={num1}
+						num2={num2}
+					/>
+				</>
+			)}
+		</div>
+	);
+
 }
