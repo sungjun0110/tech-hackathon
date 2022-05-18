@@ -199,6 +199,11 @@
 	line-height: 19px;
 }
 
+.home-subject-button:hover {
+	background: rgba(180, 213, 87, 0.8);
+	transform: scale(1.1, 1.1);
+}
+
 .home-hero-container {
 	height: 435px;
 	width: 207px;
@@ -211,9 +216,9 @@
 .home-main-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
+	gap: 20px;
 	align-items: center;
-
 	padding: 20px 40px 20px 30px;
 	background: #aae4f3;
 	border-radius: 20px;
@@ -225,12 +230,13 @@
 	flex-direction: column;
 	background: #ffffff;
 	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
 }
 
 .home-hero-image {
 	width: 761px;
 	height: 431px;
-
 	border-radius: 20px;
 }
 
@@ -250,6 +256,10 @@
 	background: #f5aa19;
 	border-radius: 10px;
 	padding-left: 15px;
+}
+
+.home-button-play:hover {
+	transform: scale(1.1, 1.1);
 }
 
 .home-hero-description {
@@ -292,6 +302,10 @@
 .home-footer-game-image {
 	height: 186px;
 	border-radius: 20px;
+}
+
+.home-footer-game-image:hover {
+	transform: scale(1.1, 1.1);
 }
 
 .home-footer-game-description {
