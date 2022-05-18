@@ -9,8 +9,9 @@
 }
 .food-bar-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	align-items: flex-end;
+	align-items: center;
 	padding-bottom: 10px;
 	padding-top: 10px;
 	width: 70px;
@@ -33,12 +34,12 @@
 	width: 54px;
 	border: 0.75px solid #000000;
 	background: linear-gradient(180deg, #f5eb8d 0%, #dca310 100%);
-
 	border-radius: 30px;
 }
 
 .food {
 	margin-top: 0;
+	margin-bottom: 0;
 	padding-top: 7.5px;
 	font-family: "Roboto";
 	font-style: normal;

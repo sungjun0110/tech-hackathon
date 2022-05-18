@@ -1,29 +1,30 @@
-import "./GameContainer.css";
-import { useState, useContext } from "react";
-import KeyPadDisplay from "../KeyPadDisplay/KeyPadDisplay";
-import KeyPad from "../KeyPad/KeyPad";
-import { SessionContext } from "../../pages/App/App";
-import { useNavigate } from "react-router-dom";
-import RewardModal from "../RewardModal/RewardModal";
+import './GameContainer.css'
+import { useState, useContext } from 'react'
+import KeyPadDisplay from '../KeyPadDisplay/KeyPadDisplay'
+import KeyPad from '../KeyPad/KeyPad'
+import { SessionContext } from '../../pages/App/App'
+import { useNavigate } from 'react-router-dom'
+import RewardModal from '../RewardModal/RewardModal'
+
 export default function GameContainer() {
-	const navigate = useNavigate();
-	const { setUserResult, setFarmFood, farmFood, winCondition } =
-		useContext(SessionContext);
-	const [userInput, setUserInput] = useState("");
-	const [num1, setNum1] = useState(generateNums());
-	const [num2, setNum2] = useState(generateNums());
+  const navigate = useNavigate()
+  const { setUserResult, setFarmFood, farmFood, winCondition } =
+    useContext(SessionContext)
+  const [userInput, setUserInput] = useState('')
+  const [num1, setNum1] = useState(generateNums())
+  const [num2, setNum2] = useState(generateNums())
 
-	function generateNums() {
-		return Math.floor(Math.random() * 10);
-	}
+  function generateNums() {
+    return Math.floor(Math.random() * 10)
+  }
 
-	function handleClick(val) {
-		if (val === "<-") {
-			setUserInput(userInput.slice(0, userInput.length - 1));
-		} else {
-			setUserInput(userInput.concat(val));
-		}
-	}
+  function handleClick(val) {
+    if (val === '<-') {
+      setUserInput(userInput.slice(0, userInput.length - 1))
+    } else {
+      setUserInput(userInput.concat(val))
+    }
+  }
 
 	function handleEnter(evt) {
 			evt.preventDefault()
@@ -44,22 +45,22 @@ export default function GameContainer() {
 		}
 	}
 
-	function correctAnswer() {
-		// Each correct answer adds 10% to the CSS height property of the food bar. See FoodBar.js line 31, also line 12 for "full bar" condition.
-		setFarmFood(farmFood + 10);
-		// when the user gets the answer right, it generates a new set of numbers to add.
-		setNum1(generateNums());
-		setNum2(generateNums());
-		// After half a second, clears the green checkmark
-		setTimeout(setUserResult(), 500);
-		// Resets the input box for new set of numbers.
-		setUserInput("");
-	}
+  function correctAnswer() {
+    // Each correct answer adds 10% to the CSS height property of the food bar. See FoodBar.js line 31, also line 12 for "full bar" condition.
+    setFarmFood(farmFood + 10)
+    // when the user gets the answer right, it generates a new set of numbers to add.
+    setNum1(generateNums())
+    setNum2(generateNums())
+    // After half a second, clears the green checkmark
+    setTimeout(setUserResult(), 500)
+    // Resets the input box for new set of numbers.
+    setUserInput('')
+  }
 
-	function incorrectAnswer() {
-		// After half a second, clears the red "x"
-		setTimeout(setUserResult(), 500);
-	}
+  function incorrectAnswer() {
+    // After half a second, clears the red "x"
+    setTimeout(setUserResult(), 500)
+  }
 
 	return (
 		<div className="game-container">
@@ -80,4 +81,5 @@ export default function GameContainer() {
 			)}
 		</div>
 	);
+
 }

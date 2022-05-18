@@ -1,4 +1,3 @@
-// import Navbar from '../../components/Navbar/Navbar';
 import "./Home.css";
 import { Link } from "react-router-dom";
 
@@ -16,7 +15,7 @@ export default function Home() {
 					</div>
 					<div className="home-title-container">
 						<h1 className="home-title">Build-a-Farm</h1>
-						<h3 className="home-sub">Math Problems</h3>
+						<h3 className="home-sub">Play math games. Collect farm animals.</h3>
 					</div>
 
 					<div className="home-sign-block">
