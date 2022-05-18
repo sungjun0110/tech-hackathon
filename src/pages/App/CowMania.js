@@ -1,6 +1,7 @@
 import FoodBar from "../../components/FoodBar/FoodBar";
 import GameContainer from "../../components/GameContainer/GameContainer";
 import "./CowMania.css";
+import { SessionContext } from "./App";
 export default function CowMania() {
 	return (
 		<div className="cowmania-page">
@@ -8,7 +9,7 @@ export default function CowMania() {
 				<div className="cowmania-gamecontainer">
 					<GameContainer />
 				</div>
-				<div cowmania-foodbar>
+				<div className="cowmania-foodbar">
 					<FoodBar />
 				</div>
 			</div>
