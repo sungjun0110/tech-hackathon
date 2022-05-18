@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+.home-container {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+.home-title,
+.home-sub {
+	margin-bottom: 0;
+}
+
+.home-sub {
+	margin-top: 0;
+	margin-bottom: 10%;
+}
+
+.home-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.home-title-image {
+	width: 151px;
+	height: 134px;
+}
+.home-title-container {
+	width: 480px;
+}
+
+.home-title {
+	font-family: "Jua";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 80px;
+	line-height: 100px;
+}
+
+.home-sub {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 47px;
+}
+
+.home-sign-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.home-sign-container {
+	display: flex;
+	align-items: center;
+	position: relative;
+	right: 0;
+	width: 220px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 35px;
+}
+
+.home-sign-container p {
+	margin-top: 0;
+}
+
+.home-sign-icon {
+	width: 57px;
+	height: 57px;
+}
+
+.home-nav-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.home-grade-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.home-grade-button p {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 30px;
+	text-align: center;
+	color: #000000;
+	margin-top: 0;
+}
+
+.button {
+	height: 100px;
+	width: 100px;
+	border-radius: 20px;
+	border: none;
+	font-family: "Jua";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 75px;
+	color: #000000;
+}
+
+.bk {
+	background: #58bad4;
+}
+
+.b1 {
+	background: #d34b58;
+}
+
+.b2 {
+	background: #77d280;
+}
+
+.b3 {
+	background: #ae6be2;
+}
+
+.b4 {
+	background: #f1ab42;
+}
+
+.b5 {
+	background: #5c99f5;
+}
+
+.b6 {
+	background: #fcd934;
+}
+
+.home-subject-container {
+	display: flex;
+	justify-content: space-between;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.home-subject-button {
+	background: #b4d557;
+	border-radius: 10px;
+	border: none;
+	width: 150px;
+	height: 50px;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.home-hero-container {
+	height: 435px;
+	width: 207px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.home-main-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 20px 40px 20px 30px;
+	background: #aae4f3;
+	border-radius: 20px;
+	margin: 36px 0 20px 0;
+}
+
+.home-hero-title-container {
+	display: flex;
+	flex-direction: column;
+	background: #ffffff;
+	border-radius: 10px;
+}
+
+.home-hero-image {
+	width: 761px;
+	height: 431px;
+
+	border-radius: 20px;
+}
+
+.home-button-play {
+	width: 142px;
+	height: 80px;
+	font-family: "Jua";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 75px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #000000;
+	border: none;
+	background: #f5aa19;
+	border-radius: 10px;
+}
+
+.home-hero-description {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 30px;
+	text-align: center;
+	color: #000000;
+	margin-top: 5px;
+}
+
+.home-hero-title {
+	font-family: "Jua";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 38px;
+	color: #000000;
+	margin-bottom: 0;
+}
+
+.home-footer-container {
+	display: flex;
+	gap: 62px;
+	justify-content: space-between;
+}
+
+.home-footer-game {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 230px;
+	height: 250px;
+}
+
+.home-footer-game-image {
+	height: 186px;
+	border-radius: 20px;
+}
+
+.home-footer-game-description {
+	margin-bottom: 0;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 30px;
+	color: #000000;
+}
+
+a {
+	text-decoration: none;
+	text-decoration-style: none;
+}
