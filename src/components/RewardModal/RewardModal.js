@@ -11,13 +11,12 @@ const RewardModal = (props) => {
 			<div className="backdrop" />
 			<Card className="card">
 				<h2 className="congrats">Congratulations</h2>
-				{/* <h2> {props.title} </h2> */}
 				<p className="msg">You've earned a new barn animal!</p>
-				{/* <p> {props.message} </p> */}
+
 				<img
-					className="star_img"
-					src="https://i.imgur.com/SQjlB3J.png"
-					alt="Star Trophy"
+					className="cow_img"
+					src="https://i.imgur.com/d7lY3rC.gif"
+					alt="Cow Eating"
 				></img>
 				<div className="btn_container">
 					<button name="button" type="button" className="btn view_btn">
