@@ -24,3 +24,11 @@
 .cowmania-gamecontainer {
 	margin: 0 auto;
 }
+
+.win-modal {
+	position: absolute;
+	margin: 0 auto;
+	height: 500px;
+	width: 500px;
+	background: tan;
+}
