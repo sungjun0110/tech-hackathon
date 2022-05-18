@@ -43,7 +43,7 @@ export default function CowMania() {
 							className="cowmania-hay"
 						></img>
 					</footer>
-					<Dashboard />
+					{/* <Dashboard /> */}
 					<div id="game-instruction-container"  onClick={instructionClickHandler}>
 						<div id="question-mark">
 							?
